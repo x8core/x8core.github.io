@@ -49,7 +49,7 @@ let playTrack = (dom) => {
 
   for (let i = 0; i < list.length; i++) {
 
-    let title = list[i].slice(31, -4)
+    let title = list[i].slice(48, -9)
 
     let letter = title.substr(0, 1)
     if (letter !== curLetter) {
