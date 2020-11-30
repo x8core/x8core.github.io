@@ -26,10 +26,12 @@ var walk = function(dir, done) {
 
 let list = []
 
-walk('audio',(err, results) => {
+walk('../store/audio',(err, results) => {
     for (let i = 0; i < results.length; i++) {
         let t = results[i]
-        list.push('https://' + t.substr(t.indexOf('x8core.github.io/audio')))
+        let link = t.slice('/home/nikolay/projects/store'.length)
+        link = 'https://anyx.dev/x8core/store/blob/master' + link + '?raw=true'
+        list.push(link)
     }
     fs.writeFileSync('list.json', JSON.stringify(list.sort()))
 })

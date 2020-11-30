@@ -41,7 +41,7 @@ let playTrack = (dom) => {
 
 (async() => {
 
-  let list = await fetch('list.json?v=3')
+  let list = await fetch('list.json?v=4')
   list = await list.json()
   console.log('tracks count: ', list.length)
 
