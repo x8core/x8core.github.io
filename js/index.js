@@ -60,7 +60,7 @@ let playTrack = (dom) => {
     }
 
     let dom = document.createElement('a')
-    dom.setAttribute('href', "https://github.com/x8core/x8core.github.io/blob/master/audio/Heavy%20Rain%20(2010)/01%20Ethan%20Mars'%20Main%20Theme.mp3")
+    dom.setAttribute('href', list[i])
     dom.innerText = title
     dom.classList.add('track')
     dom.addEventListener('click', (e) => {
