@@ -9,7 +9,7 @@ let listBlock = document.getElementById('listBlock')
 
 window.onscroll = (e) => {
   let el = document.getElementById('playerBlock')
-  el.style.top = window.scrollY + 'px'
+  el.style.height = window.scrollY + 'px'
 }
 
 
