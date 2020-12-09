@@ -5,6 +5,8 @@ let p = new Plyr('#player', {}); p.volume = 0.4
 let playingTrack
 let trackInfo = document.getElementById('trackInfo')
 
+let listBlock = document.getElementById('listBlock')
+
 /*let processScroll = () => {
 
   if (localStorage.getItem('scroll')) window.scrollTo(0, window.pageYOffset)
@@ -56,7 +58,7 @@ let playTrack = (dom) => {
       curLetter = letter
       let div = document.createElement('h2')
       div.innerText = letter
-      document.body.appendChild(div)
+      listBlock.appendChild(div)
     }
 
     let dom = document.createElement('a')
@@ -69,7 +71,7 @@ let playTrack = (dom) => {
       p.on('ended', (e) => playTrack(playingTrack.nextElementSibling))
     })
 
-    document.body.appendChild(dom)
+    listBlock.appendChild(dom)
   }
 
   //setTimeout(processScroll,1200)

@@ -26,14 +26,21 @@
     }
     #playerBlock {
         position: fixed;
+        top: 0;
         width: 100%;
+    }
+
+    #listBlock {
+        margin-top: 120px;
     }
 </style>
 
 <div id="playerBlock">
-    <audio style="color: lightgreen" controls id="player"></audio>
+    <audio controls id="player"></audio>
     <div id="trackInfo">.</div>
 </div>
+
+<div id="listBlock"></div>
 
 <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
 <script src="js/index.js?v=3"></script>
