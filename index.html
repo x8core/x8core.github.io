@@ -5,62 +5,18 @@
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
 
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" /></head>
-
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css" />
+    <link rel="stylesheet" href="index.css?v1" />
 </head>
 
-<body style="height: 9000px">
-
-<style>
-    audio {
-        display:block; width: 100%; outline: none;
-    }
-
-    .track {
-        display: block;
-        color: black;
-        line-height: 2;
-        text-decoration: none;
-    }
-    .track.active,
-    .track:hover
-    {
-        background: black;
-        color: white;
-    }
-    #trackInfo {
-        background: black;
-        color: white;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; padding: 5px 0 5px 10px
-    }
-    #playerBlock {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    audio {
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    .plyr--audio {
-        position: fixed !important;
-        top: 0 !important;
-    }
-
-    #listBlock {
-        margin-top: 120px;
-    }
-</style>
+<body>
 
 <div id="playerBlock">
     <audio controls id="player"></audio>
     <div id="trackInfo">.</div>
 </div>
 
-<div id="listBlock">
-</div>
+<div id="listBlock"></div>
 
 <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
 <script src="js/index.js?v=3"></script>
