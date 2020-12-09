@@ -6,9 +6,6 @@
     audio {
         display:block; width: 100%; outline: none;
     }
-    .tracksContainer {
-
-    }
 
     .track {
         display: block;
@@ -27,13 +24,16 @@
         color: white;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; padding: 5px 0 5px 10px
     }
+    #playerBlock {
+        position: fixed;
+        width: 100%;
+    }
 </style>
 
-<div style="position: fixed; width: 100%;">
+<div id="playerBlock">
     <audio style="color: lightgreen" controls id="player"></audio>
     <div id="trackInfo">.</div>
 </div>
-<br><br><br><br><br>
 
 <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
 <script src="js/index.js?v=3"></script>
