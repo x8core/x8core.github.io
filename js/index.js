@@ -7,13 +7,9 @@ let trackInfo = document.getElementById('trackInfo')
 
 let listBlock = document.getElementById('listBlock')
 
-/*let processScroll = () => {
+window.onscroll = (e) => {
+}
 
-  if (localStorage.getItem('scroll')) window.scrollTo(0, window.pageYOffset)
-  window.onscroll = (e) => {
-    if (window.pageYOffset) localStorage.setItem('scroll', window.pageYOffset)
-  }
-}*/
 
 let get = (name) => {
   let nameEQ = name + '=';
