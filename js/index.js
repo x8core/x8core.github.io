@@ -9,7 +9,6 @@ let listBlock = document.getElementById('listBlock')
 
 window.onscroll = (e) => {
   let el = document.getElementById('playerBlock')
-  el.style.height = window.scrollY + 'px'
 }
 
 
